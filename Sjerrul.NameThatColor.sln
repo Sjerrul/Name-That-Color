@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjerrul.NameThatColor", "Sjerrul.NameThatColor\Sjerrul.NameThatColor.csproj", "{9459A5B0-5AB2-4EC3-B3C4-C055505879C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorNamer", "ColorNamer\ColorNamer.csproj", "{4668D3E4-DA03-4FDB-BAEC-764380D5497E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9459A5B0-5AB2-4EC3-B3C4-C055505879C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9459A5B0-5AB2-4EC3-B3C4-C055505879C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9459A5B0-5AB2-4EC3-B3C4-C055505879C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9459A5B0-5AB2-4EC3-B3C4-C055505879C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
