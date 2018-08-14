@@ -1,9 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjerrul.NameThatColor", "Sjerrul.NameThatColor\Sjerrul.NameThatColor.csproj", "{9459A5B0-5AB2-4EC3-B3C4-C055505879C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorNamer", "ColorNamer\ColorNamer.csproj", "{4668D3E4-DA03-4FDB-BAEC-764380D5497E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{4BDAF9F0-410C-418C-8DBA-B1997360026D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{8D69C1F8-42EB-404E-A906-55F35C643CE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjerrul.ColorNaming", "Sjerrul.ColorNaming\Sjerrul.ColorNaming.csproj", "{4668D3E4-DA03-4FDB-BAEC-764380D5497E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{34DF134D-E42A-4BD7-A24F-E9AB2929BD19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sjerrul.NameThatColor.DataImporter", "Sjerrul.NameThatColor.DataImporter\Sjerrul.NameThatColor.DataImporter.csproj", "{5D3CE518-C385-4B1E-A0CB-5EDE52B117E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,8 +29,20 @@ Global
 		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4668D3E4-DA03-4FDB-BAEC-764380D5497E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D3CE518-C385-4B1E-A0CB-5EDE52B117E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D3CE518-C385-4B1E-A0CB-5EDE52B117E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D3CE518-C385-4B1E-A0CB-5EDE52B117E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D3CE518-C385-4B1E-A0CB-5EDE52B117E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9459A5B0-5AB2-4EC3-B3C4-C055505879C2} = {4BDAF9F0-410C-418C-8DBA-B1997360026D}
+		{4668D3E4-DA03-4FDB-BAEC-764380D5497E} = {8D69C1F8-42EB-404E-A906-55F35C643CE5}
+		{5D3CE518-C385-4B1E-A0CB-5EDE52B117E1} = {34DF134D-E42A-4BD7-A24F-E9AB2929BD19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77EBB4F8-E649-4D84-A7F1-E312C8F342A3}
 	EndGlobalSection
 EndGlobal

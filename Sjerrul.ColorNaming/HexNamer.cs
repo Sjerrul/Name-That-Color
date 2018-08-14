@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ColorNamer
+namespace Sjerrul.ColorNaming
 {
-    class HexNamer
+    internal static class HexNamer
     {
         internal static string GetNameForColor(string hex)
         {
             hex = hex.ToLower();
             Assembly assembly = Assembly.GetExecutingAssembly();
-            Stream stream = assembly.GetManifestResourceStream("ColorNamer.data.hex.txt");
+            Stream stream = assembly.GetManifestResourceStream("Sjerrul.ColorNaming.data.hex.txt");
 
             string line;
 
@@ -38,12 +33,11 @@ namespace ColorNamer
 
         private static string Capitalize(string s)
         {
-            // Check for empty string.
             if (string.IsNullOrEmpty(s))
             {
                 return string.Empty;
             }
-            // Return char and concat substring.
+
             return char.ToUpper(s[0]) + s.Substring(1);
         }
     }

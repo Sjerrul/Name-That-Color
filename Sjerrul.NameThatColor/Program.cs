@@ -1,22 +1,26 @@
-﻿using System;
+﻿using Sjerrul.ColorNaming;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ColorNamer;
 
 namespace Sjerrul.NameThatColor
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Translator.NameThatColor("#CEB301"));
-            Console.WriteLine(Translator.NameThatColor("#ad900d"));
-            Console.WriteLine(Translator.NameThatColor("#CC9900"));
-            Console.WriteLine(Translator.NameThatColor("#CC0000"));
-            Console.WriteLine(Translator.NameThatColor("#0077FF"));
-            Console.WriteLine(Translator.NameThatColor("#33ccff"));
+            IColorNamer colorNamer = new ColorNamer();
+
+            Console.WriteLine(colorNamer.GetColorName("#CEB301"));
+            Console.WriteLine(colorNamer.GetColorName("#ad900d"));
+            Console.WriteLine(colorNamer.GetColorName("#CC9900"));
+            Console.WriteLine(colorNamer.GetColorName("#CC0000"));
+            Console.WriteLine(colorNamer.GetColorName("#0077FF"));
+            Console.WriteLine(colorNamer.GetColorName("#33ccff"));
+
+            Console.WriteLine(colorNamer.GetColorName(0, 155, 255));
 
             Console.ReadKey();
         }
